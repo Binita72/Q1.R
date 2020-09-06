@@ -1,0 +1,17 @@
+df<- read.csv("C:/Users/Mou/Desktop/finity/Q.1.csv.csv")
+View(df)
+summary(df$Numbers)
+mean(df$Numbers)
+median(df$Numbers)
+sd(df$Numbers)
+x<- mean(df$Numbers)
+y<- sd(df$Numbers)
+boxplot(df$Numbers)
+pnorm(max(df$Numbers),mean=0.2414, sd=0.169454, lower.tail = TRUE)
+
+pnorm(max(df$Numbers),mean=0.2414, sd=0.169454, lower.tail = FALSE)
+pnorm(min(df$Numbers),mean=0.2414, sd=0.169454, lower.tail = FALSE)
+pnorm(min(df$Numbers),mean=0.2414, sd=0.169454, lower.tail = TRUE)
+boxplot(df$Numbers)$out
+var(df$Numbers, y= NULL, na.rm=FALSE)
+var(df$Numbers, y= NULL, na.rm=TRUE)
